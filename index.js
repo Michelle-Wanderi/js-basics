@@ -158,3 +158,64 @@ for (let t = 0; t <=5; t++ ){
        
     
 }
+// //While loop
+// let i = 0;
+// while(i<= 5){
+//     if (i % 2 !== 0) console.log(i);
+//     i++
+// }
+
+//do-while
+let i = 0;
+do {
+    if (i % 2 !== 0) console.log(i);
+    i++;
+}
+while(i <=5);
+    
+//Exercise
+const output = fizzBuzz(45);
+    console.log(output);
+
+
+function fizzBuzz(input){
+    if (typeof input !== 'number')
+    return 'Not a number';
+
+    if((input % 3 === 0) && (input % 5 === 0))
+    return 'FizzBuzz'; 
+
+
+    if (input % 3 === 0 )
+    return 'Fizz';
+
+    if (input % 5 ===0 )
+    return 'Buzz';
+
+    return input;
+
+
+}
+
+//Demerit Points
+
+//Speed LImit = 70
+// for every 5km/hr exceeding from 70 = 1 point
+//Math.floor(1.3)
+//MOre than 12 points = Suspended
+
+
+
+checkSpeed(45);
+
+function checkSpeed(speed){
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+    if (speed < speedLimit)
+    console.log('Ok');
+    else {
+       let points = Math.floor((speed - speedLimit) / kmPerPoint );
+       if (points >= 12)
+       console.log('License suspended');
+    }
+}
