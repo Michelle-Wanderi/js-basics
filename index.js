@@ -90,3 +90,71 @@ let points = 89;
 let type = points > 100 ? 'gold' : 'silver';
 
 console.log(type);
+
+//Logical operators with non-booleans
+
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor; //Logical or operator
+
+console.log(currentColor);
+
+
+ 
+//Exercise- Swapping variables
+let j = 'red';
+let k = 'green';
+
+let c = j;
+j = k;
+k = c;
+
+
+
+console.log(j);
+console.log(k);
+
+
+//If else 
+//HOur
+//If hour is betwwen 6am and 12pm: Good morning 
+//if it is between 12pm and 6pm : good afternoon
+//otherwise ; GOODNIGHT
+ 
+let hour = 19;
+if (hour>= 6 && hour <12){
+ console.log('Good morning');
+
+}
+else if  (hour >= 12 && hour < 18){
+    console.log('Good afternoon');
+}
+else if(hour > 18){
+    console.log('Goodnight');
+}
+
+//Switch..case
+ 
+let role; 'guest';
+
+switch(role){
+    case 'guest' :
+        console.log('Guest User');
+        break;
+
+        case 'moderator':
+            console.log('Moderator User');
+            break;
+
+        default:
+            console.log('Unknown User');
+   
+}
+
+//For loop
+
+for (let t = 0; t <=5; t++ ){
+    console.log('Hello World', t);
+       
+    
+}
