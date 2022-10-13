@@ -219,3 +219,77 @@ function checkSpeed(speed){
        console.log('License suspended');
     }
 }
+
+
+
+showNumbers(10);
+
+function showNumbers(limit){
+    
+}
+console.log()
+
+// //Object oriented programming
+//  const circle = {      //object literal
+//     radius: 1,
+//     location : {
+//         x: 1,
+//         y: 1
+//     },
+//     isVisible: true,
+//     draw: function() {
+//         console.log('draw');
+    
+//     }
+//  };
+//  circle.draw(); // Calling the draw method
+
+//If an object has a function then it is called a method
+
+//Factory function - create objects
+// function createCircle(radius,){
+//     return{      //object literal
+//         radius,
+
+//         draw(){
+//             console.log('draw');
+//         }
+//      };
+// }
+// const circle1 = createCircle(1);
+// console.log(circle1);
+
+// const circle2 = createCircle(2);
+// console.log(circle2);
+
+//The good thing about factory functions is that all the logic is stored in one place therefore we can call the function with different values or arguments
+
+
+//Constructor functions - We use Pascal Notation
+//Factory functions - We use camel casing
+//OneTwoThree
+
+
+const myCircle = createCircle(1);
+function  Circle(radius){
+ this.radius = radius;
+ this.draw = function(){
+    console.log('draw');
+ }
+}
+Circle.name
+const circle = new Circle(1);
+const x = {};
+
+
+// Every object has a constructor property which references the function that was used in the object
+
+//Functions are objects
+
+
+//Value/Primitives 
+
+let x = 10;
+let y = x;
+
+x = 20;
